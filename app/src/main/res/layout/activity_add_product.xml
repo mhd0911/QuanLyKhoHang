@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/back" style="@style/WarehouseBack" />
+
+            <TextView
+                style="@style/WarehouseHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/add_product" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                style="@style/WarehouseLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/product_name"
+                android:text="@string/product_name" />
+
+            <EditText
+                android:id="@+id/product_name"
+                style="@style/WarehouseInput"
+                android:hint="@string/product_name_hint"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/WarehouseLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:labelFor="@id/product_price"
+                android:text="@string/price" />
+
+            <EditText
+                android:id="@+id/product_price"
+                style="@style/WarehouseInput"
+                android:hint="@string/price_hint"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/WarehouseLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:labelFor="@id/product_quantity"
+                android:text="@string/quantity" />
+
+            <EditText
+                android:id="@+id/product_quantity"
+                style="@style/WarehouseInput"
+                android:hint="@string/quantity_hint"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/WarehouseLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:labelFor="@id/product_category"
+                android:text="@string/category" />
+
+            <Spinner
+                android:id="@+id/product_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:minHeight="48dp"
+                android:spinnerMode="dropdown" />
+
+            <Switch
+                android:id="@+id/product_active"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:checked="true"
+                android:minHeight="48dp"
+                android:text="@string/active"
+                android:textColor="@color/ink"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/WarehouseLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:labelFor="@id/product_description"
+                android:text="@string/description" />
+
+            <EditText
+                android:id="@+id/product_description"
+                style="@style/WarehouseInput"
+                android:gravity="top|start"
+                android:hint="@string/description_hint"
+                android:inputType="textCapSentences|textMultiLine"
+                android:minLines="3" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save_product"
+            style="@style/WarehouseButton"
+            android:layout_marginTop="12dp"
+            android:text="@string/save_product" />
+    </LinearLayout>
+</ScrollView>

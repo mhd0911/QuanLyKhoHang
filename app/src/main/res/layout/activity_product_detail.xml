@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/back" style="@style/WarehouseBack" />
+
+            <TextView
+                style="@style/WarehouseHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/detail_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/detail_name"
+                style="@style/WarehouseHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/detail_category"
+                style="@style/WarehouseChip"
+                android:layout_marginTop="7dp" />
+
+            <TextView
+                android:id="@+id/detail_active"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/muted"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/detail_price"
+                style="@style/WarehouseHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/teal"
+                android:textSize="26sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/WarehouseLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/detail_quantity"
+                        android:text="@string/stock_quantity" />
+
+                    <TextView
+                        android:id="@+id/detail_quantity"
+                        style="@style/WarehouseHeading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:accessibilityLiveRegion="polite"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/detail_warning"
+                        style="@style/WarehouseChip"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/chip_warning"
+                        android:text="@string/low_stock"
+                        android:textColor="@color/danger"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.15"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/WarehouseLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/detail_value"
+                        android:text="@string/stock_value" />
+
+                    <TextView
+                        android:id="@+id/detail_value"
+                        style="@style/WarehouseHeading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/WarehouseLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/description" />
+
+            <TextView
+                android:id="@+id/detail_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/muted"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/stock_in"
+                style="@style/WarehouseButton"
+                android:layout_width="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:text="@string/stock_in" />
+
+            <Button
+                android:id="@+id/sell_one"
+                style="@style/WarehouseButton"
+                android:layout_width="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_sell"
+                android:text="@string/sell_one"
+                android:textColor="@color/amber" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/return_to_list"
+            style="@style/WarehouseButton"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/button_secondary"
+            android:text="@string/back"
+            android:textColor="@color/teal_dark" />
+
+        <Button
+            android:id="@+id/delete_product"
+            style="@style/WarehouseButton"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/button_danger"
+            android:text="@string/delete_product"
+            android:textColor="@color/danger" />
+    </LinearLayout>
+</ScrollView>

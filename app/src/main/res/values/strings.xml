@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quản lý kho hàng</string>
+    <string name="login_subtitle">Đăng nhập để quản lý sản phẩm trong kho</string>
+    <string name="username">Tên đăng nhập</string>
+    <string name="username_hint">Nhập tên đăng nhập</string>
+    <string name="password">Mật khẩu</string>
+    <string name="password_hint">Nhập mật khẩu</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="demo_account">Tài khoản mẫu: admin / 123456</string>
+    <string name="login_required">Vui lòng nhập tên đăng nhập và mật khẩu.</string>
+    <string name="login_invalid">Sai tên đăng nhập hoặc mật khẩu</string>
+
+    <string name="warehouse">Kho hàng của tôi</string>
+    <string name="statistics">Thống kê kho</string>
+    <string name="products">Sản phẩm</string>
+    <string name="total_value">Giá trị kho</string>
+    <string name="low_stock">Sắp hết hàng</string>
+    <string name="product_list">Danh sách sản phẩm</string>
+    <string name="empty_products">Kho chưa có sản phẩm. Hãy thêm sản phẩm để bắt đầu.</string>
+    <string name="quantity_short">SL: %1$d</string>
+    <string name="money_format">%1$s ₫</string>
+    <string name="add_product">Thêm sản phẩm</string>
+
+    <string name="product_name">Tên sản phẩm</string>
+    <string name="product_name_hint">Ví dụ: Tai nghe Bluetooth</string>
+    <string name="price">Giá bán (VNĐ)</string>
+    <string name="price_hint">Ví dụ: 250000</string>
+    <string name="quantity">Số lượng</string>
+    <string name="quantity_hint">Ví dụ: 10</string>
+    <string name="category">Loại sản phẩm</string>
+    <string name="active">Đang kinh doanh</string>
+    <string name="inactive">Ngừng kinh doanh</string>
+    <string name="description">Mô tả</string>
+    <string name="description_hint">Nhập mô tả (không bắt buộc)</string>
+    <string name="save_product">Lưu sản phẩm</string>
+    <string name="product_saved">Đã thêm sản phẩm</string>
+    <string name="save_failed">Không thể lưu sản phẩm. Vui lòng thử lại.</string>
+    <string name="name_required">Vui lòng nhập tên sản phẩm.</string>
+    <string name="price_invalid">Nhập giá nguyên từ 1 đến 2.147.483.647 ₫.</string>
+    <string name="quantity_invalid">Nhập số nguyên từ 0 đến 2.147.483.647.</string>
+
+    <string name="detail_title">Chi tiết sản phẩm</string>
+    <string name="stock_quantity">Số lượng tồn</string>
+    <string name="stock_value">Giá trị tồn kho</string>
+    <string name="no_description">Chưa có mô tả</string>
+    <string name="stock_in">+ Nhập thêm 1</string>
+    <string name="sell_one">− Bán 1</string>
+    <string name="back">Quay lại</string>
+    <string name="back_arrow">‹</string>
+    <string name="delete_product">Xóa sản phẩm</string>
+    <string name="delete_confirmation">Bạn có muốn xóa sản phẩm này khỏi kho?</string>
+    <string name="product_deleted">Đã xóa sản phẩm</string>
+    <string name="delete_failed">Không thể xóa sản phẩm. Vui lòng thử lại.</string>
+    <string name="cancel">Hủy</string>
+    <string name="delete">Xóa</string>
+    <string name="product_missing">Không tìm thấy sản phẩm</string>
+    <string name="out_of_stock">Hết hàng</string>
+    <string name="quantity_limit">Số lượng đã đạt giới hạn.</string>
+    <string name="update_failed">Không thể cập nhật tồn kho. Vui lòng thử lại.</string>
+
+    <string-array name="product_categories">
+        <item>Điện tử</item>
+        <item>Thực phẩm</item>
+        <item>Văn phòng phẩm</item>
+        <item>Gia dụng</item>
+        <item>Khác</item>
+    </string-array>
+</resources>

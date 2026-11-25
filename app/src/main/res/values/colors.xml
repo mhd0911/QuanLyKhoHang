@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="canvas">#FFF5FA</color>
+    <color name="paper">#FFFFFF</color>
+    <color name="ink">#361B2B</color>
+    <color name="muted">#704A60</color>
+    <color name="line">#EAD2DF</color>
+    <color name="teal">#A02765</color>
+    <color name="teal_dark">#71163F</color>
+    <color name="teal_pale">#F8DDEA</color>
+    <color name="mint">#F6CBDF</color>
+</resources>
